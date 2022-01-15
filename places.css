@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body , html{
+    overflow-x: hidden;
+    background-image: url(back.jpg);
+    background-size: cover;
+}
+nav ul{
+    background: black;
+    width: 100%;
+    margin-top: 10px;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+    color: #fff;
+}
+navi{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+nav{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-position: center;
+}
+.logo{
+    width: 150px;
+    max-width: 20px 0;
+    cursor: pointer;
+}
+nav.sticky{
+    position: fixed;
+    top: o;
+    left: o;
+    padding: 10px 8%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+}
+nav.sticky ul{
+    width: auto;
+
+}
+.logo{
+    color: yellow;
+    font-size: 42px;
+    font-weight: 1100;
+    letter-spacing: 14px;
+    padding-left: 10px;
+    }
+
+
+section{
+    width: 80%;
+    margin: 80px auto;
+
+}
+.title{
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.events .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: white;
+    margin: 20px auto;
+}
+p{
+    color: white;
+    padding: 0 40px;
+}
+.events .ctn{
+    margin-top: 30px;
+}
+img{
+    size: 10px;
+}
+footer{
+    position: absolute;
+    background: black;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: white;
+} 
+.foter{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;  
+    text-align: center;
+} 
+.foter h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.foter p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 15px;
+}
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.social li{
+    margin: 0 10px;
+}
+.social a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.social a{
+    text-decoration: none;
+    color: white;
+}
+.social a:hover i{
+    color: yellow;
+}
+.foter-bttn{
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+span{
+    color: yellow;
+}
+.ctn{
+        margin: 0px 10px;
+        border: 2px solid black;
+        padding: 13px 15px;
+        letter-spacing: 1px;
+        color: white;
+        border-radius: 30px;
+        background-color: black;
+        text-decoration: none;
+}

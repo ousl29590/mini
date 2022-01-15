@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about srilanka</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,
+wght@0,400;0,500;0,800;0,900;1,100;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="navi">
+        <nav id="navbar">
+            <img src="logo.png" class="logo" sizes="10px">
+            <ul id="menu">
+                <a href="frist.html"><li>HOME</li></a>
+                <a href="todo.html"><li>TO DO LIST</li></a>
+                <a href="places.html"><li>PLACES</li></a>
+                <a href="contac.html"><li>CONTACT US</li></a>
+            </ul>
+        </nav>
+    </div>
+    <br><br>
+
+    <div class="head">
+        <h1>ABOUT FROM <span>SRILANKA</span></h1>
+    </div>
+    <div class="slider">
+        <figure>
+            <div class="slide">
+                <img src="slider/slide0.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slider/slide1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slider/slide3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slider/slide4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="slider/slide5.jpg" alt="">
+            </div>
+        </figure>
+    </div>
+    <div class="about">
+            <h1>General information about Sri Lanka...</h1>
+            <h2>Read all about the best travel time, the climate, the currency, the time difference and 
+                the history of Sri Lanka. Want to be well-prepared for your trip? Start</h2>
+                <br><br>
+
+                <p>Sri Lanka is an island in the Indian Ocean and lies southeast of India. The country
+                is known for its vast plains and impressive mountain tops, tea plantations,
+                and beautiful temples. The island was formerly known as Ceylon, 
+                a name which is still used for the tea that comes from Sri Lanka.
+                The country is relatively rich compared to nearby India. Regardless,
+                one fifth of the population lives below the poverty line.
+                The economy of Sri Lanka is primarily centered around the export of 
+                coffee, clothes, rubber and coconuts. In recent years, 
+                tourism has become an increasingly important source of income.
+                More and more tourists are discovering the beauty of the island.         
+                This is in part due to the falling prices of flight tickets, 
+                but also due to better facilities for tourists.</p>
+                <br><br>
+                <h2>History</h2>
+                <br><br>
+                <p>Sri Lanka has been inhabited since prehistoric times. 
+                    The oldest human remains found there date from roughly 125,000 years ago.
+                    In prehistoric times, the island was inhabited by the Weddas.
+                    During the European Middle Ages, the Tamil gradually made their way from South India to the north of Sri Lanka,
+                    where they established a kingdom in the 11th century.
+                    It is likely that the ancestors of the Singalese, 
+                    the largest ethnic group in Sri Lanka,
+                    came to Sri Lanka from North India around the 5th or 6th century B.C. 
+                    They lived alongside the Tamil,
+                    although relations between the two groups were complex and not always peaceful.</p>
+                    <br>
+                    <p>The first Europeans to arrive in Sri Lanka were he Portugese in 1505.
+                        
+                     They stayed until 1658. In 1602, the Dutch Verenigde Oost-Indische Compagnie (VOC) was created,
+                     and the Dutch also sailed to Sri Lanka. In 1638, the king of Kandy asked the VOC for help: 
+                     he wanted the support of the Dutch against the Portugese.
+                     The VOC provided this support in exchange for an exclusive trade contract.</p>
+                     <br>
+                     <p>The influence of the VOC quickly spread,
+                     and by 1658 the whole of Sri Lanka was under Dutch rule. However, 
+                     the agreed upon deals were not respected by both parties.
+                     A large amount of modernisation took place in the country, 
+                     such as the construction os canals for the transport of good,    
+                     but this was done in part through oppression. 
+                     The Protestant Dutch did not bother the Buddhist,
+                     Hindu and Muslims parts of the populations, 
+                     but the Catholics and the remaining Portugese colonists were persecuted.
+                     Addtionally, the population was forced to pay the Dutch colonists higher taxes
+                     compared to the old Portugese rulers.</p>
+                     <br>
+                     <p>In 1796, the British invaded Sri Lanka and in 1802 Sri Lanka became a
+                     British colony known as Ceylon. On 4 February 1948,
+                     Sri Lanka became independent under the name Dominion Ceylon,
+                     and in 1972 this name was changed to Sri Lanka. From 1983 until 2009, 
+                     a violent civil war occured in Sri Lanka between the Tamils and the Singalese,
+                     causing the deaths of tens of thousands of people.</p>
+
+
+    <footer>
+        <div class="foter">
+            <h3>WONDERFULL COUNTRY IN INDIAN OCEAN</h3>
+            <p>I am with you. I'm not going anywhere</p>
+            <ul class="social">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <div class="foter-bttn">
+            <p>copyright &copy;2022 wonderfull country in indian ocean.designed by dinuka</p>
+        </div>
+    </footer>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky"); 
+            }
+        }
+    </script>
+
+</body>
+</html>

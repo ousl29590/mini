@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" type="text/css" href="todo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,
+wght@0,400;0,500;0,800;0,900;1,100;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    
+</head>
+<body>
+    <div class="navi">
+        <nav id="navbar">
+            <img src="logo.png" class="logo" sizes="10px">
+            <ul id="menu">
+                <a href="frist.html"><li>HOME</li></a>
+                <a href="todo.html"><li>TO DO LIST</li></a>
+                <a href="places.html"><li>PLACES</li></a>
+                <a href="contac.html"><li>CONTACT US</li></a>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="app" class="container">
+        <h1>My Todo List</h1>
+        <br><br>
+
+        <div v-if="!isEditing">
+            <input type="text" v-model="todo">
+            <input type="submit" value="Add" @click="storeTodo">
+        </div>
+        <div v-else>
+            <input type="text" v-model="todo">
+            <input type="submit" value="Update" @click="updateTodo">
+        </div>
+
+        <ol>
+            <li v-for="(todo, index) in todos">
+                {{ todo }}
+                <button @click="editTodo(index, todo)">Edit</button>
+                <button @click="removeTodo(index)">Delete</button>
+            </li>
+        </ol>
+    </div>
+    <br><br><br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4047218.2338639917!2d78.
+    4607615684816!3d7.857177223980795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+    1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri%20Lanka!5e0!3m2!1sen!2slk!
+    4v1641966840383!5m2!1sen!2slk" width="400" height="300" style="border:0;"
+     allowfullscreen="" loading="lazy"></iframe>
+     <br><br>
+     <p>Sri Lanka, formerly known as Ceylon, and officially the Democratic Socialist Republic of Sri Lanka,
+     is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal,
+     and southeast of the Arabian Sea; it is separated from the Indian subcontinent by the Gulf 
+     of Mannar and the Palk Strait.</p>
+     <br><br>
+    <footer>
+        <div class="foter">
+            <h3>WONDERFULL COUNTRY IN INDIAN OCEAN</h3>
+            <p>I am with you. I'm not going anywhere</p>
+            <ul class="social">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <div class="foter-bttn">
+            <p>copyright &copy;2022 wonderfull country in indian ocean.designed by dinuka</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            
+            data: {
+                isEditing: false,
+                todo: '',
+                todos: [],
+                selectedTodo: null
+            },
+            
+            methods: {
+                storeTodo() {
+                    this.todos.push(this.todo)
+                    this.todo = ''
+                },
+
+                removeTodo(index) {
+                    this.todos.splice(index, 1)
+                },
+
+                updateTodo() {
+                    this.todos.splice(this.selectedIndex, 1, this.todo)
+                    this.todo = ''
+                    this.isEditing = false
+                },
+
+                editTodo(index, todo) {
+                    this.isEditing = true
+                    this.todo = todo
+                    this.selectedIndex = index
+                }
+            }
+        })
+    </script>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky"); 
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    background: url(back.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+nav ul{
+    background: black;
+    width: 100%;
+    margin-top: 10px;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+    color: #fff;
+}
+navi{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+nav{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-position: center;
+}
+.logo{
+    width: 150px;
+    max-width: 20px 0;
+    cursor: pointer;
+}
+nav.sticky{
+    position: fixed;
+    top: o;
+    left: o;
+    padding: 10px 8%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+}
+nav.sticky ul{
+    width: auto;
+
+}
+footer{
+    position: absolute;
+    background: black;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: white;
+} 
+.foter{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;  
+    text-align: center;
+} 
+.foter h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.foter p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 15px;
+}
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.social li{
+    margin: 0 10px;
+}
+.social a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.social a{
+    text-decoration: none;
+    color: white;
+}
+.social a:hover i{
+    color: yellow;
+}
+.foter-bttn{
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+span{
+    color: yellow;
+}
+
+.head{
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding-top: 20px;
+    
+}
+
+.slider{
+    overflow: hidden;
+    height: 440px;
+}
+.slider figure div{
+    float: left;
+    width: 20%;
+}
+.slider figure img{
+    width: 100%;
+    float: left;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0px;
+    left: 0;
+    animation: 20s ravi infinite;
+}
+@keyframes ravi{
+    0%{
+        left: 0%;
+    }
+    10%{
+        left: 0%;
+    }
+    12%{
+        left: -100%;
+    }
+    22%{
+        left: -100%;
+    }
+    24%{
+        left: -200%;
+    }
+    34%{
+        left: -200%;
+    }
+    36%{
+        left: -300%;
+    }
+    46%{
+        left: -300%;
+    }
+    48%{
+        left: -400%;
+    }
+    58%{
+        left: -400%;
+    }
+    60%{
+        left: -300%;
+    }
+    70%{
+        left: -300%;
+    }
+    72%{
+        left: -200%;
+    }
+    82%{
+        left: -200%;
+    }
+    84%{
+        left: -100%;
+    }
+    94%{
+        left: -100%;
+    }
+    96%{
+        left: 0%;
+    }
+}
+
+.about{
+    color: white;
+    padding-top: 20px;
+}
+.about h1{
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+about h2{
+    font-size: 15px;
+}
